@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: brown;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: antiquewhite ;
+    margin-bottom: 20px;
+}
+.container a h2{
+    color :burlywood;
+    text-decoration: none;
+}
+
+#books-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;   
+    width: calc(33.333% - 60px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-card img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.book-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: brown;
+}
+
+.book-card p {
+    font-size: 0.9em;
+    color: #6c757d;
+    text-align: center;
+}
+
+.book-card .buttons {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.book-card button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.details-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.details-container.open {
+    right: 0;
+}
+
+.details-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.details-container p {
+    font-size: 1em;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.details-container input,
+.details-container textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.details-container button {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.details-container button.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+}
+
+.details-container button.save-btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .book-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 576px) {
+    .book-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Bibliothèque</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/addBook.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GESTION DE BIBLIOTHEQUE</h1>
+        <a href="#books-container"><h2>LISTER TOUS LES LIVRES</h2></a>
+        <a href="#add-book-form"><h2>AJOUTER UN LIVRE</h2></a>
+        <a href="#results-container"><h2>RECHERCHER UN LIVRE</h2></a>
+        <a hef=""><h2>GERER LES CATEGORIES</h2></a>
+    </div>
+    
+    <div class="form-container">
+        <h1>Ajouter un Nouveau Livre</h1>
+        <form id="add-book-form">
+            <label for="titre">Titre:</label>
+            <input type="text" id="titre" name="titre" required>
+
+            <label for="auteurs">Auteurs:</label>
+            <input type="text" id="auteurs" name="auteurs" required>
+
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" name="isbn" required>
+
+            <label for="image">Image (URL):</label>
+            <input type="text" id="image" name="image" required>
+
+            <label for="editeur">Éditeur:</label>
+            <input type="text" id="editeur" name="editeur" required>
+
+            <label for="datePublication">Date de Publication:</label>
+            <input type="text" id="datePublication" name="datePublication" required>
+
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required>
+
+            <label for="resume">Résumé:</label>
+            <textarea id="resume" name="resume" required></textarea>
+
+            <label for="langue">Langue:</label>
+            <input type="text" id="langue" name="langue" required>
+
+            <label for="nombrePages">Nombre de Pages:</label>
+            <input type="number" id="nombrePages" name="nombrePages" required>
+
+            <label for="disponibilite">Disponibilité:</label>
+            <select id="disponibilite" name="disponibilite" required>
+                <option value="true">Disponible</option>
+                <option value="false">Indisponible</option>
+            </select>
+
+            <label for="etat">État:</label>
+            <input type="text" id="etat" name="etat" required>
+
+            <label for="emplacement">Emplacement:</label>
+            <input type="text" id="emplacement" name="emplacement" required>
+
+            <button type="submit">Ajouter le Livre</button>
+        </form>
+    </div>
+    <div class="container">
+        <h1>Liste des Livres</h1>
+        <div id="books-container"></div>
+    </div>
+    <div id="details-container" class="details-container">
+        <button class="close-btn" id="close-btn">Fermer</button>
+        <h2 id="details-title"></h2>
+        <form id="edit-form">
+            <input type="text" id="edit-title" placeholder="Titre">
+            <input type="text" id="edit-authors" placeholder="Auteur(s)">
+            <input type="text" id="edit-isbn" placeholder="ISBN">
+            <input type="text" id="edit-editeur" placeholder="Éditeur">
+            <input type="text" id="edit-datePublication" placeholder="Date de publication">
+            <input type="text" id="edit-genre" placeholder="Genre">
+            <textarea id="edit-resume" placeholder="Résumé"></textarea>
+            <input type="text" id="edit-langue" placeholder="Langue">
+            <input type="number" id="edit-nombrePages" placeholder="Nombre de pages">
+            <input type="text" id="edit-disponibilite" placeholder="Disponibilité">
+            <input type="text" id="edit-etat" placeholder="État">
+            <input type="text" id="edit-emplacement" placeholder="Emplacement">
+            <button type="button" class="save-btn" id="save-btn">Sauvegarder</button>
+        </form>
+    </div>
+    
+    <div class="container">
+    <div class="search-container">
+        <h1>Recherche de Livres</h1>
+        <input type="text" id="search-input" placeholder="Entrez un titre, auteur, etc.">
+        <button id="search-btn">Rechercher</button>
+    </div>
+    <div id="results-container"></div></div>
+    <div class="container">
+
+    <script src="./js/search.js"></script>
+    <script src="./js/addBook.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
