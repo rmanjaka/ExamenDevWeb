@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchBtn.addEventListener('click', () => {
         const query = searchInput.value.toLowerCase();
-        fetch('livre.json')
+        fetch('/json/livre.json')
             .then(response => response.json())
             .then(data => {
                 resultsContainer.innerHTML = '';

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             emplacement: form.emplacement.value
         };
 
-        fetch('livre.json')
+        fetch('/json/livre.json')
             .then(response => response.json())
             .then(data => {
                 data.livres.push(newBook);

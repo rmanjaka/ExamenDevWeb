@@ -35,6 +35,7 @@
 
 #search-btn:hover {
     background-color: brown;
+    border: 2px solid burlywood;
 }
 
 @media (max-width: 600px) {

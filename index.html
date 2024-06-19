@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/search.css">
     <link rel="stylesheet" href="./css/addBook.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="./css/sortBook.css">
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
-    <div class="container">
+    <div class="navbar">
         <h1>GESTION DE BIBLIOTHEQUE</h1>
-        <a href="#books-container"><h2>LISTER TOUS LES LIVRES</h2></a>
-        <a href="#add-book-form"><h2>AJOUTER UN LIVRE</h2></a>
-        <a href="#results-container"><h2>RECHERCHER UN LIVRE</h2></a>
-        <a hef=""><h2>GERER LES CATEGORIES</h2></a>
+        <a href="#books-container"><p>LISTER TOUS LES LIVRES</p></a>
+        <a href="#add-book-form"><p>AJOUTER UN LIVRE</p></a>
+        <a href="#results-container"><p>RECHERCHER UN LIVRE</p></a>
+        <a href="#sorts-container"><p>TRIER</p></a>
     </div>
-    
     <div class="form-container">
         <h1>Ajouter un Nouveau Livre</h1>
         <form id="add-book-form">
@@ -95,9 +97,27 @@
         <input type="text" id="search-input" placeholder="Entrez un titre, auteur, etc.">
         <button id="search-btn">Rechercher</button>
     </div>
-    <div id="results-container"></div></div>
-    <div class="container">
+    <div class="container"><div id="results-container"></div></div>
 
+    <div class="container">
+        <h1>Triage de Livres</h1>
+        <div class="sort-container">
+            <label for="sort-criteria">Trier par:</label>
+            <select id="sort-criteria">
+                <option value="titre">Titre</option>
+                <option value="auteurs">Auteurs</option>
+                <option value="datePublication">Date de Publication</option>
+                <option value="genre">Genre</option>
+                <option value="nombrePages">Nombre de Pages</option>
+            </select>
+            <button id="sort-btn">Trier</button>
+        </div>
+    </div>
+    <div class="container">
+        <div id="sorts-container"></div>
+    </div>
+
+    <script src="./js/sortBook.js"></script>
     <script src="./js/search.js"></script>
     <script src="./js/addBook.js"></script>
     <script src="./js/script.js"></script>

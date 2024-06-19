@@ -1,0 +1,64 @@
+#sorts-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sort-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-container label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+#sort-criteria {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#sort-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: burlywood;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#sort-btn:hover {
+    background-color: brown;
+    border: 2px solid burlywood;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    #sort-criteria, #sort-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sort-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .book-card img {
+        max-width: 80px;
+    }
+}

@@ -1,0 +1,55 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color : burlywood;
+}
+
+.navbar a {
+    color: antiquewhite;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+#content {
+    margin-top: 100px;
+    padding: 10px;
+}
+
+#books-container, #add-book-form, #results-container, #sorts-container {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .navbar h1 {
+        font-size: 1.2em;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+
+}
