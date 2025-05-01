@@ -1,4 +1,4 @@
-Gestion de bibliothèque en html css et javascript 
+Gestion de bibliothèque
 
 Les fonctionnalités de l'application :
  - Lister tous les livres
