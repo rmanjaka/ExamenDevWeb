@@ -1,6 +1,6 @@
 Gestion de bibliothèque
 
-Les fonctionnalités de l'application :
+Les fonctionnalités disponibles  :
  - Lister tous les livres
  - Afficher les details d'un livre selectionné
  - Modifier les details d'un livre selectionné
